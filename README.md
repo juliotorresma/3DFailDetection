@@ -20,6 +20,45 @@ Este sistema toma una foto con tu ESP32-CAM, la manda a una API local que corre 
 
 ---
 
+## 📚 ¿Cómo funciona el modelo?
+
+Este proyecto utiliza **Transfer Learning** con un modelo preentrenado llamado `MobileNetV2`.
+
+### 🤖 ¿Qué es Transfer Learning?
+
+Es cuando tomamos un modelo entrenado con millones de imágenes (como ImageNet) y le “enseñamos” a reconocer **nuestras clases específicas** con muy pocos datos.
+
+### 🔢 Explicación matemática (simplificada):
+
+El modelo realiza la siguiente operación:
+
+```math
+\hat{y} = \text{softmax}(W_2 \cdot \text{ReLU}(W_1 \cdot f(x) + b_1) + b_2)
+```
+
+Donde:
+
+- \( x \): imagen de entrada (por ejemplo, una foto de una impresión fallida)
+- \( f(x) \): representación profunda extraída por `MobileNetV2` (convoluciones + pooling)
+- \( W_1, W_2 \): pesos entrenables de las capas densas finales
+- \( \hat{y} \): vector de probabilidades para cada clase (`OK`, `blobs`, etc.)
+
+El objetivo es minimizar la **pérdida de entropía cruzada**:
+
+```math
+\mathcal{L} = -\sum_{i=1}^{C} y_i \cdot \log(\hat{y}_i)
+```
+
+Donde:
+
+- \( y \): vector one-hot de la clase real
+- \( \hat{y} \): predicción del modelo
+- \( C \): número de clases (en este caso, 6)
+
+En palabras simples: el modelo trata de que la **probabilidad de la clase correcta** sea lo más cercana a 1 posible.
+
+---
+
 ## 📦 1. Entrenando el modelo con Transfer Learning
 
 ```bash
@@ -202,3 +241,6 @@ O usando raw JPEG:
 
 ```bash
 curl -X POST http://192.168.1.100:8080/predict \
+
+🎥 **Video de apoyo**: [Clasificador de errores en impresión 3D con IA (YouTube)](https://www.youtube.com/watch?v=qNzlytUdB_Q&t=913s)
+
