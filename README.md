@@ -263,8 +263,4 @@ Mira el proyecto en acción:
 
 [🔗 Clasificador de errores en impresión 3D con IA - YouTube](https://www.youtube.com/watch?v=qNzlytUdB_Q&t=913s)
 
-O puedes embeberlo en tu sitio así:
-
-```html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qNzlytUdB_Q?si=kZcxSnvKgcU1e8NM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-```
+[![Video de apoyo](https://img.youtube.com/vi/qNzlytUdB_Q/0.jpg)](https://www.youtube.com/watch?v=qNzlytUdB_Q)
