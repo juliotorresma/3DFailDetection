@@ -30,7 +30,7 @@ Puedes clonarlo directamente con:
 
 ```bash
 git clone https://github.com/juliotorresma/3DFailDetection.git
-
+```
 ---
 
 
