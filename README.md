@@ -20,6 +20,20 @@ Este sistema toma una foto con tu ESP32-CAM, la manda a una API local que corre 
 
 ---
 
+## 📁 Repositorio del Proyecto
+
+Este proyecto es de código abierto y está disponible en:
+
+🔗 [https://github.com/juliotorresma/3DFailDetection](https://github.com/juliotorresma/3DFailDetection)
+
+Puedes clonarlo directamente con:
+
+```bash
+git clone https://github.com/juliotorresma/3DFailDetection.git
+
+---
+
+
 ## 📚 ¿Cómo funciona el modelo?
 
 Este proyecto utiliza **Transfer Learning** con un modelo preentrenado llamado `MobileNetV2`.
