@@ -255,6 +255,7 @@ O usando raw JPEG:
 
 ```bash
 curl -X POST http://192.168.1.100:8080/predict \
+```
 
 🎥 **Video de apoyo**: [Clasificador de errores en impresión 3D con IA (YouTube)](https://www.youtube.com/watch?v=qNzlytUdB_Q&t=913s)
 
