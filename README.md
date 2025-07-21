@@ -1,4 +1,4 @@
-# 🧠🤖 Clasificador de Errores de Impresión 3D con Flask + ESP32-CAM + IA
+# Clasificador de Errores de Impresión 3D con Flask + ESP32-CAM + IA
 
 ¡Bienvenido al proyecto más nerd y útil que jamás pensaste armar!  
 Este sistema toma una foto con tu ESP32-CAM, la manda a una API local que corre un modelo de IA entrenado con TensorFlow, y te dice si tu impresión 3D es arte... o un desastre 🫠
